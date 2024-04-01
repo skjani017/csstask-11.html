@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .tr{
+           width: 150px;
+           height: 150px;
+           background-color: palevioletred;
+        }
+        input:active~ .tr{
+            transform: translate(30px,40px);    
+        }
+        .tr1{
+            width: 150px;
+           height: 150px;
+           background-color: lightblue;  
+        }
+        input:active~ .tr1{
+            transform: skew(45deg) ;
+        }
+        .tr2{
+            width: 150px;
+           height: 150px;
+           background-color: lightgreen;  
+        }
+        input:active~ .tr2{
+           transform: scale(2); 
+        }
+        .tr3{
+            width: 150px;
+           height: 150px;
+           background-color: lightpink;    
+        }
+        input:active~ .tr3{
+          transform: rotate(150deg);
+        } 
+        .tr4{
+            width: 150px;
+           height: 150px;
+           background-color: lightseagreen;    
+        }
+        input:active~ .tr4{
+            transform: perspective(300px) translate(30px,40px) skew(45deg) scale(2)  rotate(150deg);
+        }
+        
+    </style> 
+
+</head>
+<body style="background-color: black;">
+    <input type="radio">
+    <div class="tr">item</div>
+    <input type="radio">
+    <div class="tr1">item</div>
+    <input type="radio">
+    <div class="tr2">item</div>
+    <input type="radio">
+    <div class="tr3">item</div>
+    <input type="radio">
+    <div class="tr4">item</div>
+    
+    
+    
+
+
+    
+    
+</body>
+</html>
